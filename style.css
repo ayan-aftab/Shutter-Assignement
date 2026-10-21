@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    cursor: pointer;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.right {
+    width: 80%;
+    padding: 0 0 20px 20px;
+}
+
+.left {
+    width: 20%;
+    height: 100vh;
+    min-height: 650px;
+    padding: 65px 35px 25px;
+    background-color: #080808;
+    display: flex;
+    position: sticky;
+    text-align: right;
+    flex-direction: column;
+    top: 0;
+}
+
+.sidebar {
+    margin-bottom: 55px;
+}
+
+.logo {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 7px;
+    text-decoration: none;
+}
+
+
+.subtitle {
+    font-size: 11px;
+    color: #aaa;
+    letter-spacing: 5px;
+    margin-top: 12px;
+    padding-left: 10px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+nav a {
+    position: relative;
+    color: #ddd;
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 2px;
+    transition: color 0.3s;
+    padding-left: 20px;
+}
+
+nav a:hover,
+nav a.active {
+    color: #e83e63;
+}
+
+.sidebar-bottom {
+    margin-top: auto;
+}
+
+.sidebar-bottom h3 {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #eee;
+    margin-bottom: 20px;
+}
+
+.sidebar-bottom>p {
+    font-size: 13px;
+    line-height: 1.9;
+    color: #aaa;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #292929;
+    margin-top: 40px;
+    padding-top: 25px;
+}
+
+.social a {
+    color: #ddd;
+    font-size: 15px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social a:hover {
+    color: #e83e63;
+}
+
+.sidebar-bottom .copyright {
+    font-size: 10px;
+    margin-top: 25px;
+    color: #777;
+}
+
+.gallery {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    align-items: stretch;
+    gap: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.row img {
+    display: block;
+    width: 0;
+    min-width: 0;
+    flex: 1;
+    height: 280px;
+    object-fit: cover;
+    transition: opacity 0.35s;
+}
+
+.row img:hover {
+    opacity: 0.75;
+}
+
+.row-on img:first-child {
+    flex: 1.5;
+}
+
+.row-on img:last-child {
+    flex: 1;
+}
+
+.row-tw img {
+    height: 230px;
+}
+
+
+.home {
+    color: #e83e63;
+}
+
+.row-th img,
+.row-fo img,
+.row-si img,
+.row-se img,
+.row-ei img {
+    height: 300px;
+}
+
+.row-fi img {
+    height: 230px;
+}
